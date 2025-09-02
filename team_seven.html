@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Vision: Digital Learning Platform for Rural Nabha</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  
+
+    <style>
+        
+    </style>
+</head>
+<nav class="navbar">
+    <!-- Left Section -->
+    <div class="nav-left">
+      <div class="logo">Team Seven</div>
+      <a href="#" class="nav-link">Sign In</a>
+    </div>
+
+    <!-- Center Navigation -->
+    <ul class="nav-center">
+      <li><a href="#" class="nav-link">Home</a></li>
+      <li><a href="#" class="nav-link">About Us</a></li>
+      <li><a href="#" class="nav-link">Dashboard</a></li>
+      <li><a href="#" class="nav-link">Download</a></li>
+    </ul>
+
+    <!-- Right Section -->
+    <div class="nav-right">
+      <a href="#" class="explore">Explore</a>
+      <a href="#" class="btn">Login</a>
+    </div>
+
+    <!-- Mobile Menu Icon -->
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </nav>
+
+  <!-- Mobile Dropdown -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Dashboard</a>
+    <a href="#">Download</a>
+    <hr>
+    <a href="#" class="explore">Explore</a>
+    <a href="#" class="btn">Login</a>
+  </div>
+<body class="antialiased">
+
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-[#3D405B]">Project Nabha <span class="text-[#81B29A]">Digi-Shiksha</span></h1>
+                </div>
+                <nav class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#challenge" class="nav-link px-3 py-2 rounded-md text-sm font-medium">The Challenge</a>
+                        <a href="#impact" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Impact</a>
+                        <a href="#solution" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Our Solution</a>
+                        <a href="#features" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Key Features</a>
+                        <a href="#stakeholders" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Stakeholders</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <section id="challenge" class="mb-24 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-center mb-4">The Digital Divide in Nabha</h2>
+            <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                This section illustrates the significant digital gap faced by students in Nabha's rural government schools. Through an interactive chart and summary cards, you can explore the core challenges related to infrastructure, connectivity, and resources that our project aims to address.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="card text-center">
+                    <div class="text-4xl mb-2">🖥️</div>
+                    <h3 class="text-xl font-semibold mb-2">Outdated Infrastructure</h3>
+                    <p class="text-gray-600">Many schools operate with obsolete computer systems that struggle to run modern educational software, hindering effective learning.</p>
+                </div>
+                <div class="card text-center">
+                    <div class="text-4xl mb-2">🌐</div>
+                    <h3 class="text-xl font-semibold mb-2">Poor Connectivity</h3>
+                    <p class="text-gray-600">Unreliable and slow internet access prevents students and teachers from leveraging the vast world of online educational content.</p>
+                </div>
+                <div class="card text-center">
+                    <div class="text-4xl mb-2">📚</div>
+                    <h3 class="text-xl font-semibold mb-2">Lack of Resources</h3>
+                    <p class="text-gray-600">There is a severe shortage of quality, localized digital lessons and tools, leaving students with irrelevant or inaccessible materials.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-semibold text-center mb-6">Rural vs. Urban Punjab: A Comparative Snapshot</h3>
+                <div class="chart-container">
+                    <canvas id="digitalDivideChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact" class="mb-24 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-center mb-4">The Widening Gap: Impact & Urgency</h2>
+            <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                The lack of digital access is not just an inconvenience; it creates a cycle of disadvantage. This section explains why solving this problem is urgent, detailing the profound impact on students' academic journeys and their future career prospects in an increasingly digital world. 
+            </p>
+            <div class="flex flex-col items-center">
+                <div class="w-full max-w-4xl">
+                    <div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                        <div class="flex md:hidden items-center justify-center absolute w-full h-full">
+                            <div class="h-full border-l-2 border-dashed border-[#E07A5F]"></div>
+                        </div>
+                        <div class="hidden md:flex items-center absolute w-full h-full">
+                            <div class="w-full border-t-2 border-dashed border-[#E07A5F]"></div>
+                        </div>
+
+                        <div class="card z-10">
+                            <span class="text-2xl font-bold text-[#E07A5F]">1</span>
+                            <h4 class="font-semibold mt-2">Limited Digital Skills</h4>
+                            <p class="text-sm text-gray-500 mt-1">Students miss out on foundational digital literacy, a critical skill for modern life.</p>
+                        </div>
+                        <div class="card z-10">
+                            <span class="text-2xl font-bold text-[#E07A5F]">2</span>
+                            <h4 class="font-semibold mt-2">Academic Disadvantage</h4>
+                            <p class="text-sm text-gray-500 mt-1">Inability to access online resources puts them behind their urban peers.</p>
+                        </div>
+                        <div class="card z-10">
+                             <span class="text-2xl font-bold text-[#E07A5F]">3</span>
+                            <h4 class="font-semibold mt-2">Reduced Employability</h4>
+                            <p class="text-sm text-gray-500 mt-1">Lack of digital fluency limits future job opportunities and economic mobility.</p>
+                        </div>
+                        <div class="card z-10">
+                             <span class="text-2xl font-bold text-[#E07A5F]">4</span>
+                            <h4 class="font-semibold mt-2">Perpetuating Inequality</h4>
+                            <p class="text-sm text-gray-500 mt-1">The educational gap widens, reinforcing cycles of economic hardship.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="solution" class="mb-24 scroll-mt-20 text-center">
+            <h2 class="text-3xl font-bold text-center mb-4">Our Vision: A Solution for Nabha</h2>
+            <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                To bridge this gap, we propose a targeted, accessible, and effective digital learning platform. This section outlines our core solution, designed specifically to overcome the unique challenges faced by rural students and educators in the Nabha region. 
+            </p>
+             <div class="card max-w-3xl mx-auto bg-[#81B29A] text-white">
+                <h3 class="text-2xl font-bold mb-2">An Offline-First Digital Learning Platform</h3>
+                <p class="text-lg">
+                    A comprehensive mobile and web-based application designed to deliver quality education, even in areas with limited or no internet connectivity. Our goal is to empower every student with the tools they need to succeed.
+                </p>
+            </div>
+        </section>
+
+        <section id="features" class="mb-24 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-center mb-4">Key Features of the Platform</h2>
+             <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                Our platform is built on a foundation of carefully considered features that directly address the problems identified. Explore the grid below to understand the core functionalities that will make digital learning a reality for rural students.
+            </p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card">
+                    <div class="text-4xl mb-3">📶</div>
+                    <h3 class="text-xl font-semibold mb-2">Offline Functionality</h3>
+                    <p class="text-gray-600">Lessons and resources can be downloaded and used anytime, anywhere, removing the dependency on a constant internet connection.</p>
+                </div>
+                <div class="card">
+                    <div class="text-4xl mb-3">🗣️</div>
+                    <h3 class="text-xl font-semibold mb-2">Local Language Content</h3>
+                    <p class="text-gray-600">Interactive lessons in Punjabi and other local languages to increase comprehension, engagement, and learning outcomes.</p>
+                </div>
+                <div class="card">
+                    <div class="text-4xl mb-3">💡</div>
+                    <h3 class="text-xl font-semibold mb-2">Digital Literacy Modules</h3>
+                    <p class="text-gray-600">Tailored courses to teach essential digital skills, from basic computer use to online safety, preparing students for the future.</p>
+                </div>
+                <div class="card">
+                    <div class="text-4xl mb-3">📈</div>
+                    <h3 class="text-xl font-semibold mb-2">Teacher Dashboards</h3>
+                    <p class="text-gray-600">Simple, intuitive tools for teachers to monitor student progress, assign tasks, and provide personalized support. </p>
+                </div>
+                <div class="card">
+                    <div class="text-4xl mb-3">📱</div>
+                    <h3 class="text-xl font-semibold mb-2">Optimized for Low-End Devices</h3>
+                    <p class="text-gray-600">A lightweight app designed to run smoothly on affordable smartphones and older computers, ensuring maximum accessibility.</p>
+                </div>
+                 <div class="card">
+                    <div class="text-4xl mb-3">🤝</div>
+                    <h3 class="text-xl font-semibold mb-2">Community Engagement</h3>
+                    <p class="text-gray-600">Features to involve parents and the community in the students' learning journey, creating a supportive ecosystem.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="stakeholders" class="scroll-mt-20">
+            <h2 class="text-3xl font-bold text-center mb-4">Project Beneficiaries & Stakeholders</h2>
+            <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                This project is a collaborative effort designed to serve a whole community. The diagram below illustrates the central role of students and teachers, and how they are supported by a network of key stakeholders who are all invested in their success.
+            </p>
+            <div class="relative max-w-3xl mx-auto p-8">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-48 h-48 card flex items-center justify-center text-center font-bold bg-[#3D405B] text-white">
+                        Rural Students & Teachers
+                    </div>
+                </div>
+                
+                <div class="relative w-full h-80">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 card text-center">School Admins</div>
+                    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 card text-center">Parents</div>
+                    <div class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-8 card text-center">Punjab Education<br>Department</div>
+                    <div class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-8 card text-center">Local Community</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t mt-16">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-gray-500">
+            <p>&copy; 2025 Government of Punjab | Project Nabha Digi-Shiksha Initiative</p>
+        </div>
+    </footer>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
